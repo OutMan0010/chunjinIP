@@ -6,23 +6,61 @@ log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - xiaohe
   type: vless
-  server: 81.90.25.152
-  port: 34302
-  uuid: e9a7f2c2-51bd-4a81-de35-26b369e2585b
+  server: 172.66.44.212
+  port: 443
+  uuid: 2e305ebe-f6e6-4689-b32f-cd04ab5ff541
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: iDB8onmvBnTuyt5T7T6CejfW8vlRb.PagES.DeV
+  network: ws
+  ws-opts:
+    path: /vl/6mJ4GmDKCRZ5zNJka52LVXs3XMbvJohS?ed=2560
+    headers:
+      Host: idb8onmvbntuyt5t7t6cejfw8vlrb.pages.dev
+- name: 🇮🇶 IQ 02 - xiaohe
+  type: vless
+  server: 104.21.96.1
+  port: 443
+  uuid: 0836463b-214f-4af6-aa85-85a56a62388e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
+    headers:
+      Host: d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev
+- name: 🇮🇶 IQ 03 - xiaohe
+  type: vless
+  server: 188.114.97.7
+  port: 443
+  uuid: ba49d874-fe02-465d-82d3-ed981dc7694f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: o94yv7lif0-anxisd9efehvvs7mxn6bh.z-ule-ika-d-e-ne-k-e.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: o94yv7lif0-anxisd9efehvvs7mxn6bh.z-ule-ika-d-e-ne-k-e.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇶 IQ 01 - xiaohe
+  - 🇮🇶 IQ 02 - xiaohe
+  - 🇮🇶 IQ 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇶 IQ 01 - xiaohe
+  - 🇮🇶 IQ 02 - xiaohe
+  - 🇮🇶 IQ 03 - xiaohe
 rules:
 - MATCH,PROXIES
