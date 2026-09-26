@@ -36,77 +36,14 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 04 (家宽) - xiaohe
-  type: vless
-  server: 172.67.219.50
-  port: 443
-  uuid: a5b1d1ec-327c-f1c5-5856-b34600000000
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ez-541f9d.ezaccess1d3db24.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: ez-541f9d.ezaccess1d3db24.workers.dev
-- name: 🇯🇵 日本 (Japan) 05 (家宽) - xiaohe
-  type: vless
-  server: 109.120.155.155
-  port: 444
-  uuid: 99ab6748-3d57-4562-9451-843c15960b9b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-- name: 🇺🇸 美国 (United States) 06 (家宽) - xiaohe
-  type: vless
-  server: 162.159.91.222
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-723a643df685
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: n3zaxce7u0es.crzl48eiuses.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/723a643df685/loc-0
-    headers:
-      Host: n3zaxce7u0es.crzl48eiuses.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 07 (家宽) - xiaohe
-  type: ss
-  server: ce1fc2d8.krkt.hkssip.com
-  port: 49642
-  cipher: aes-256-gcm
-  password: ac9c0a7b
-  udp: true
-- name: 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - xiaohe
+  client-fingerprint: edge
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
   type: ss
   server: 36.224.141.124
   port: 50099
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-- name: 🇺🇸 美国 (United States) 09 (家宽) - xiaohe
-  type: vless
-  server: 104.21.78.225
-  port: 443
-  uuid: 4ce7cb8a-f9b1-4bfa-a80d-9e168c61a633
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: curly-night-6928.ggdhchjk.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: curly-night-6928.ggdhchjk.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -115,12 +52,7 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 04 (家宽) - xiaohe
-  - 🇯🇵 日本 (Japan) 05 (家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 06 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 07 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 09 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -129,11 +61,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 04 (家宽) - xiaohe
-  - 🇯🇵 日本 (Japan) 05 (家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 06 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 07 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 09 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
